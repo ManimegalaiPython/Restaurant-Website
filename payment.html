@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>BookMyTable</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="CSS/payment.css">
+  
+</head>
+
+<body>
+  <!-- Top Menu -->
+  <div class="top-nav">
+    <ul>
+      <li><a href="home1.html">Home</a></li>
+      <li><a href="reservation.html">Reservation</a></li>
+      <li><a href="blogs.html">Blog</a></li>
+      <li><a href="aboutus.html">About us</a></li>
+      <li><a href="contact.html">Contact us</a></li>
+      <li><a href="help.html">Help</a></li>
+    </ul>
+  </div>
+
+
+  <!-- Header -->
+  <div class="header">
+    <div class="logo">
+      <h1><span>Book</span>mytable</h1>
+      <p><strong>Never wait for your meal</strong></p>
+    </div>
+
+    <div class="search-box">
+      <input type="text" placeholder="Search">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+
+    <div class="header-icons">
+      <i class="fa-regular fa-bell"></i>
+      <i class="fa-solid fa-headset" onclick="goHelp()"></i>
+      <i class="fa-regular fa-heart" onclick="goToFav()"></i>
+      <div class="profile">
+        <img src="images/Photo by Dani.png" alt="profile">
+      </div>
+    </div>
+  </div>
+
+
+  <div class="header1">Payment Selection</div>
+
+  <div class="container">
+    <div class="left">
+      <img src="images/swipe.png" alt="Payment Image">
+    </div>
+    <div class="right">
+      <div class="payment-methods">
+        <h3 onclick="toggleList()">Payment Selection <span id="arrow">&#9650;</span></h3>
+        <ul id="payment-list">
+          <li onclick="showForm('credit')">Credit card</li>
+          <li onclick="showForm('debit')">Debit card</li>
+          <li onclick="showForm('gpay')">Google Pay</li>
+          <li onclick="showForm('upi')">UPI</li>
+        </ul>
+      </div>
+
+      <div class="payment-form-container">
+        <!-- Credit Card Form -->
+        <div id="credit" class="payment-form">
+          <h4>Credit Card Details</h4>
+          <input type="text" placeholder="Card Number">
+          <input type="text" placeholder="Card Holder Name">
+          <input type="text" placeholder="Expiry Date">
+          <input type="text" placeholder="CVV">
+          <button onclick="proceed()">Proceed</button>
+        </div>
+
+        <!-- Debit Card Form -->
+        <div id="debit" class="payment-form">
+          <h4>Debit Card Details</h4>
+          <input type="text" placeholder="Card Number">
+          <input type="text" placeholder="Card Holder Name">
+          <input type="text" placeholder="Expiry Date">
+          <input type="text" placeholder="CVV">
+          <button>Proceed</button>
+        </div>
+
+        <!-- Google Pay Form -->
+        <div id="gpay" class="payment-form">
+          <h4>Google Pay</h4>
+          <input type="text" placeholder="Google Pay Number / ID">
+          <button>Proceed</button>
+        </div>
+
+        <!-- UPI Form -->
+        <div id="upi" class="payment-form">
+          <h4>UPI</h4>
+          <input type="text" placeholder="UPI ID">
+          <button>Proceed</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="footer-col">
+        <h3>Company</h3>
+        <p>About Us</p>
+        <p>Contact Us</p>
+        <p>Customer Reviews</p>
+        <p>Add Your Restaurant</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Policy Info</h3>
+        <p>Terms & Conditions</p>
+        <p>Cookies Policy</p>
+        <p>Cancellation Policy</p>
+        <p>Privacy Policy</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Cities</h3>
+        <p>Chennai</p>
+        <p>Bangalore</p>
+        <p>Hyderabad</p>
+        <p>Mumbai</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Help</h3>
+        <p>Booking Status</p>
+        <p>Add Restaurant</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="footer-middle">
+      <p>Restaurant in Chennai</p>
+      <p>Restaurant in Bangalore</p>
+      <p>Restaurant in Hyderabad</p>
+      <p>Restaurant in Pune</p>
+      <p>Restaurant in Kolkata</p>
+      <p>Restaurant in Mumbai</p>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="copyright">
+        © 2025 Book My Table.Co.in. All rights reserved.
+      </div>
+
+      <div class="footer-contact">
+        <p><i class="fa-solid fa-phone"></i> (123) 8940-985498</p>
+        <p><i class="fa-solid fa-envelope"></i> info@bookmytable.com</p>
+        <p><i class="fa-solid fa-location-dot"></i> Chennai 54375387</p>
+      </div>
+    </div>
+
+    <div class="social-icons">
+      <i class="fa-brands fa-facebook-f"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-instagram"></i>
+    </div>
+
+  </footer>
+  <script>
+
+    function goHelp() {
+      window.location.href = "contact.html";
+    }
+    function goToFav() {
+      window.location.href = "whitelist.html";
+    }
+
+
+    function toggleList() {
+      const list = document.getElementById('payment-list');
+      const arrow = document.getElementById('arrow');
+      if (list.style.display === 'block') {
+        list.style.display = 'none';
+        arrow.innerHTML = '&#9660;'; // down arrow
+      } else {
+        list.style.display = 'block';
+        arrow.innerHTML = '&#9650;'; // up arrow
+      }
+    }
+
+    function showForm(method) {
+      const forms = document.querySelectorAll('.payment-form');
+      forms.forEach(f => f.classList.remove('active'));
+      document.getElementById(method).classList.add('active');
+    }
+
+
+
+
+
+    function proceed() {
+      alert("Reserved successfully");
+      // redirect to another page
+      window.location.href = "reservationconfirm.html";
+    }
+
+
+
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>BookMyTable</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="CSS/whitelist.css">
+  
+ 
+</head>
+
+<body>
+
+
+
+  <!-- Top Menu -->
+  <div class="top-nav">
+    <ul>
+      <li><a href="home1.html">Home</a></li>
+      <li><a href="reservation.html">Reservation</a></li>
+      <li><a href="blogs.html">Blog</a></li>
+      <li><a href="aboutus.html">About us</a></li>
+      <li><a href="contact.html">Contact us</a></li>
+      <li><a href="help.html">Help</a></li>
+    </ul>
+  </div>
+
+
+  <!-- Header -->
+  <div class="header">
+    <div class="logo">
+      <h1><span>Book</span>mytable</h1>
+      <p>Never wait for your meal</p>
+    </div>
+
+    <div class="search-box">
+      <input type="text" placeholder="Search">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+
+    <div class="header-icons">
+      <i class="fa-regular fa-bell"></i>
+      <i class="fa-solid fa-headset" onclick="goHelp()"></i>
+      <i class="fa-regular fa-heart" onclick="goToFav()"></i>
+      <div class="profile">
+        <img src="images/Photo by Dani.png" alt="profile">
+      </div>
+    </div>
+  </div>
+
+  <h2 class="section-title">Our Whitelist</h2>
+
+  <!-- RESTAURANT -->
+  <div class="restaurant-card">
+    <img src="images/Frame 30680.png" alt="">
+    <div class="restaurant-content">
+      <i class="fa-regular fa-heart heart"></i>
+      <h3>Grant Buffet</h3>
+      <p>Upper Ground Floor, East court, Phoenix Market City,</p>
+      <p>Viman nagar, Chennai.</p>
+
+      <div class="tags">North Indian, Mohali, Italian, BBQ</div>
+      <p>Cost for two :</p>
+      <p class="price">Rs.1000</p>
+
+      <div class="rating">★★★★★</div>
+      <div class="add-more" onclick="goAddMorereservation()">Add more +</div>
+
+
+    </div>
+  </div>
+
+  <!-- SHOW MORE -->
+  <div class="show-more">
+    <button>Show more</button>
+  </div>
+
+  <h2 class="section-title">Menu Item Whitelist</h2>
+
+  <!-- MENU + ORDER -->
+  <div class="menu-section">
+
+    <!-- MENU ITEM -->
+    <div class="menu-card">
+      <img src="images/cake.png" alt="">
+      <div class="menu-content">
+        <i class="fa-solid fa-heart heart"></i>
+        <h3>Panno Catto</h3>
+        <p>North Indian, Mohali,</p>
+        <p>Italian, BBQ</p>
+        <div class="menu-price">₹ 240</div>
+        <div class="add-more" onclick="goAddMore()">Add more +</div>
+      </div>
+    </div>
+
+    <!-- ORDER REVIEW -->
+    <div class="order-review">
+      <h3>Order Review</h3>
+      <p>Table Price: Rs: 1000</p>
+      <p>Menu Price: Rs: 240</p>
+      <p class="total">Total: 1240</p>
+      <a href="reservetable.html"><button class="pay-btn">Reserve to Pay</button></a>
+    </div>
+
+  </div>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="footer-col">
+        <h3>Company</h3>
+        <p>About Us</p>
+        <p>Contact Us</p>
+        <p>Customer Reviews</p>
+        <p>Add Your Restaurant</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Policy Info</h3>
+        <p>Terms & Conditions</p>
+        <p>Cookies Policy</p>
+        <p>Cancellation Policy</p>
+        <p>Privacy Policy</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Cities</h3>
+        <p>Chennai</p>
+        <p>Bangalore</p>
+        <p>Hyderabad</p>
+        <p>Mumbai</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Help</h3>
+        <p>Booking Status</p>
+        <p>Add Restaurant</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="footer-middle">
+      <p>Restaurant in Chennai</p>
+      <p>Restaurant in Bangalore</p>
+      <p>Restaurant in Hyderabad</p>
+      <p>Restaurant in Pune</p>
+      <p>Restaurant in Kolkata</p>
+      <p>Restaurant in Mumbai</p>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="copyright">
+        © 2025 Book My Table.Co.in. All rights reserved.
+      </div>
+
+      <div class="footer-contact">
+        <p><i class="fa-solid fa-phone"></i> (123) 8940-985498</p>
+        <p><i class="fa-solid fa-envelope"></i> info@bookmytable.com</p>
+        <p><i class="fa-solid fa-location-dot"></i> Chennai 54375387</p>
+      </div>
+    </div>
+
+    <div class="social-icons">
+      <i class="fa-brands fa-facebook-f"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-instagram"></i>
+    </div>
+
+  </footer>
+
+  <script>
+
+
+    function goHelp() {
+      window.location.href = "contact.html";
+    }
+    function goToFav() {
+      window.location.href = "whitelist.html";
+    }
+
+
+    function goAddMore() {
+      window.location.href = "menucard.html";
+    }
+
+    function goAddMorereservation() {
+      window.location.href = "reservation.html";
+
+    }
+  </script>
+
+</body>
+
+</html>

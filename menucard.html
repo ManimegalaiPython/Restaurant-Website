@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>BookMyTable</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Poppins -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+<link rel="stylesheet" href="CSS/menucard.css">
+
+</head>
+
+<body>
+
+    
+<!-- Top Menu -->
+<div class="top-nav">
+  <ul>
+    <li><a href="home1.html">Home</a></li>
+    <li><a href="reservation.html">Reservation</a></li>
+    <li><a href="blogs.html">Blog</a></li>
+    <li><a href="aboutus.html">About us</a></li>
+    <li><a href="contact.html">Contact us</a></li>
+    <li><a href="help.html">Help</a></li>
+  </ul>
+</div>
+
+
+<!-- Header -->
+<div class="header">
+  <div class="logo">
+    <h1><span>Book</span>mytable</h1>
+    <p><strong>Never wait for your meal</strong></p>
+  </div>
+
+  <div class="search-box">
+    <input type="text" placeholder="Search">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </div>
+
+   <div class="header-icons">
+    <i class="fa-regular fa-bell"></i>
+<i class="fa-solid fa-headset" onclick="goHelp()"></i>
+    <i class="fa-regular fa-heart" onclick="goToFav()"></i>
+    <div class="profile">
+      <img src="images/Photo by Dani.png" alt="profile">
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+    <!-- TOP -->
+    <div class="top">
+        <img src="images/Frame 30681.png" alt="Restaurant">
+        <div class="top-info">
+            <i class="fa-regular fa-heart heart"></i>
+            <h2>Grant Buffet</h2>
+            <p>Upper Ground Floor, East court, Phoenix Market City,</p>
+            <p>Viman nagar, Chennai..</p>
+            <br>
+            <p>North Indian, Mohali, Italian, BBQ</p>
+            <p>Cost for two : Rs1000</p>
+            <div class="rating">★★★★★</div>
+        </div>
+    </div>
+
+    <!-- TABS -->
+    <div class="tabs">
+   <div class="tab" onclick="goOverview()">Overview Restaurant</div>
+   <div class="tab active" onclick="goMenu()">Menu Card</div>
+</div>
+
+
+    <!-- MENU -->
+    <h3 class="menu-title">Our Menu Card</h3>
+
+    <div class="categories">
+        <span>Starters</span>
+        <span>Main course</span>
+        <span class="active">Desserts</span>
+        <span>Beverages</span>
+    </div>
+
+    <!-- GRID -->
+   <div class="menu-grid">
+
+    <div class="card">
+        <div class="card-img">
+            <img src="images/cake.png">
+            <i class="fa-regular fa-heart fav"></i>
+        </div>
+        <div class="card-body">
+            <h4>Panno Catto</h4>
+            <div class="price">&#8377; 240</div>
+            <button>Add Item</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-img">
+            <img src="images/browne ice.png">
+            <i class="fa-regular fa-heart fav"></i>
+        </div>
+        <div class="card-body">
+            <h4>Brownie Ice</h4>
+            <div class="price">&#8377; 280</div>
+            <button>Add Item</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-img">
+            <img src="images/chesscake.png">
+            <i class="fa-regular fa-heart fav"></i>
+        </div>
+        <div class="card-body">
+            <h4>Chesse Cake</h4>
+            <div class="price">&#8377; 280</div>
+            <button>Add Item</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-img">
+            <img src="images/applepie.png">
+            <i class="fa-regular fa-heart fav"></i>
+        </div>
+        <div class="card-body">
+            <h4>Apple Pie</h4>
+            <div class="price">&#8377; 240</div>
+            <button>Add Item</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-img">
+            <img src="images/gulab.png">
+            <i class="fa-regular fa-heart fav"></i>
+        </div>
+        <div class="card-body">
+            <h4>Gulab Jamun</h4>
+            <div class="price">&#8377; 240</div>
+            <button>Add Item</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-img">
+            <img src="images/donet.png">
+            <i class="fa-regular fa-heart fav"></i>
+        </div>
+        <div class="card-body">
+            <h4>Creme Brulee</h4>
+            <div class="price">&#8377; 240</div>
+            <button>Add Item</button>
+        </div>
+    </div>
+
+</div>
+
+
+</div>
+
+
+
+<!-- FOOTER -->
+<footer class="footer">
+
+  <div class="footer-top">
+    <div class="footer-col">
+      <h3>Company</h3>
+      <p>About Us</p>
+      <p>Contact Us</p>
+      <p>Customer Reviews</p>
+      <p>Add Your Restaurant</p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Policy Info</h3>
+      <p>Terms & Conditions</p>
+      <p>Cookies Policy</p>
+      <p>Cancellation Policy</p>
+      <p>Privacy Policy</p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Cities</h3>
+      <p>Chennai</p>
+      <p>Bangalore</p>
+      <p>Hyderabad</p>
+      <p>Mumbai</p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Help</h3>
+      <p>Booking Status</p>
+      <p>Add Restaurant</p>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="footer-middle">
+    <p>Restaurant in Chennai</p>
+    <p>Restaurant in Bangalore</p>
+    <p>Restaurant in Hyderabad</p>
+    <p>Restaurant in Pune</p>
+    <p>Restaurant in Kolkata</p>
+    <p>Restaurant in Mumbai</p>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="copyright">
+      © 2025 Book My Table.Co.in. All rights reserved.
+    </div>
+
+    <div class="footer-contact">
+      <p><i class="fa-solid fa-phone"></i> (123) 8940-985498</p>
+      <p><i class="fa-solid fa-envelope"></i> info@bookmytable.com</p>
+      <p><i class="fa-solid fa-location-dot"></i> Chennai 54375387</p>
+    </div>
+  </div>
+
+  <div class="social-icons">
+    <i class="fa-brands fa-facebook-f"></i>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-instagram"></i>
+  </div>
+
+</footer>
+<script>
+  function goOverview() {
+    // Redirect to Overview page
+    window.location.href = "restaranoverview.html";
+  }
+
+  function goMenu() {
+    // Stay on current page (Menu Card page)
+    window.location.href = "menucard.html"; // optional, can omit if already on menucard
+  }
+
+
+
+    function goHelp(){
+    window.location.href = "contact.html";
+}
+function goToFav(){
+    window.location.href = "whitelist.html";
+}
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>BookMyTable</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="CSS/home.css">
+ 
+
+</head>
+
+<body>
+
+  <!-- Top Menu -->
+  <div class="top-nav">
+    <ul>
+      <li><a href="home1.html">Home</a></li>
+      <li><a href="reservation.html">Reservation</a></li>
+      <li><a href="blogs.html">Blog</a></li>
+      <li><a href="aboutus.html">About us</a></li>
+      <li><a href="contact.html">Contact us</a></li>
+      <li><a href="help.html">Help</a></li>
+    </ul>
+  </div>
+
+
+  <!-- Header -->
+  <div class="header">
+    <div class="logo">
+      <h1><span>Book</span>mytable</h1>
+      <p><strong>Never wait for your meal</strong></p>
+    </div>
+
+    <div class="search-box">
+      <input type="text" placeholder="Search">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+    <button class="reg-btn" onclick="registerUser()">Register</button>
+
+  </div>
+
+  <!-- Hero -->
+  <div class="hero">
+    <h2>
+      Book Table at your favourite restaurant and<br>
+      get served instantly
+    </h2>
+  </div>
+
+  <!-- Bottom Text -->
+  <div class="bottom-text">
+    <h3>Explore restaurent your city</h3>
+
+    <!-- ================= CITY IMAGES ================= -->
+    <section class="city-section">
+      <div class="city-track">
+
+        <div class="city-card" onclick="goToCity()">
+          <img src="images/hydrabad.png">
+          <h3>Hyderabad</h3>
+        </div>
+
+        <div class="city-card" onclick="goToCity()">
+          <img src="images/bangalore.png">
+          <h3>Bangalore</h3>
+        </div>
+
+        <div class="city-card" onclick="goToCity()">
+          <img src="images/chennai.png">
+          <h3>Chennai</h3>
+        </div>
+
+        <div class="city-card" onclick="goToCity()">
+          <img src="images/mumbai.png">
+          <h3>Mumbai</h3>
+        </div>
+    </section>
+  </div>
+  </div>
+
+
+
+  <!-- HOW IT WORKS -->
+  <section class="how-it-works">
+    <h2>How it works</h2>
+
+    <div class="steps">
+      <div class="step">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <p>Search restaurant</p>
+      </div>
+
+      <div class="step">
+        <i class="fa-regular fa-calendar"></i>
+        <p>Select date/time</p>
+      </div>
+
+      <div class="step">
+        <i class="fa-solid fa-chair"></i>
+        <p>Reserve your table</p>
+      </div>
+
+      <div class="step">
+        <i class="fa-solid fa-utensils"></i>
+        <p>Get served instantly</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CUSTOMER REVIEWS -->
+  <section class="customer-reviews">
+    <h2>Customer Reviews</h2>
+  </section>
+
+
+  <!-- CUSTOMER REVIEW CARDS -->
+  <section class="review-cards">
+
+    <div class="review">
+      <img src="images/amad.png" alt="Aman">
+      <h4>Aman p.</h4>
+      <div class="stars">★★★★★</div>
+      <p>Great and excellent service</p>
+    </div>
+
+    <div class="review">
+      <img src="images/david.png" alt="David">
+      <h4>David.p</h4>
+      <div class="stars">★★★★★</div>
+      <p>Great and excellent service</p>
+    </div>
+
+    <div class="review">
+      <img src="images/Gopi.png" alt="Gopi">
+      <h4>Gopi.p</h4>
+      <div class="stars">★★★★★</div>
+      <p>Flexible Service</p>
+    </div>
+
+  </section>
+
+
+  <!-- ================= MAP & SUBSCRIBE ================= -->
+  <section class="bottom-section">
+    <div class="map">
+      <img src="images/map.png">
+    </div>
+
+    <div class="subscribe">
+      <h1>Get offers in Your Inbox</h1>
+      <div class="subscribe-box">
+        <input type="email" placeholder="Enter your mail">
+        <button>Subscribe</button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="footer-col">
+        <h3>Company</h3>
+        <p>About Us</p>
+        <p>Contact Us</p>
+        <p>Customer Reviews</p>
+        <p>Add Your Restaurant</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Policy Info</h3>
+        <p>Terms & Conditions</p>
+        <p>Cookies Policy</p>
+        <p>Cancellation Policy</p>
+        <p>Privacy Policy</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Cities</h3>
+        <p>Chennai</p>
+        <p>Bangalore</p>
+        <p>Hyderabad</p>
+        <p>Mumbai</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Help</h3>
+        <p>Booking Status</p>
+        <p>Add Restaurant</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="footer-middle">
+      <p>Restaurant in Chennai</p>
+      <p>Restaurant in Bangalore</p>
+      <p>Restaurant in Hyderabad</p>
+      <p>Restaurant in Pune</p>
+      <p>Restaurant in Kolkata</p>
+      <p>Restaurant in Mumbai</p>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="copyright">
+        © 2025 Book My Table.Co.in. All rights reserved.
+      </div>
+
+      <div class="footer-contact">
+        <p><i class="fa-solid fa-phone"></i> (123) 8940-985498</p>
+        <p><i class="fa-solid fa-envelope"></i> info@bookmytable.com</p>
+        <p><i class="fa-solid fa-location-dot"></i> Chennai 54375387</p>
+      </div>
+    </div>
+
+    <div class="social-icons">
+      <i class="fa-brands fa-facebook-f"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-instagram"></i>
+    </div>
+
+  </footer>
+  <script>
+
+
+    function registerUser() {
+
+      window.location.href = "login.html";   // redirect page
+    }
+
+
+    function goHelp() {
+      window.location.href = "contact.html";
+    }
+    function goToFav() {
+      window.location.href = "whitelist.html";
+    }
+
+
+
+
+    function goToCity() {
+      window.location.href = "cardcity.html";
+    }
+
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>BookMyTable</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="CSS/help.css">
+</head>
+
+<body>
+
+
+
+  <!-- Top Menu -->
+  <div class="top-nav">
+    <ul>
+      <li><a href="home1.html">Home</a></li>
+      <li><a href="reservation.html">Reservation</a></li>
+      <li><a href="blogs.html">Blog</a></li>
+      <li><a href="aboutus.html">About us</a></li>
+      <li><a href="contact.html">Contact us</a></li>
+      <li><a href="help.html">Help</a></li>
+    </ul>
+  </div>
+
+
+  <!-- Header -->
+  <div class="header">
+    <div class="logo">
+      <h1><span>Book</span>mytable</h1>
+      <p><strong>Never wait for your meal</strong></p>
+    </div>
+
+    <div class="search-box">
+      <input type="text" placeholder="Search">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+
+    <div class="header-icons">
+      <i class="fa-regular fa-bell"></i>
+      <i class="fa-solid fa-headset" onclick="goHelp()"></i>
+      <i class="fa-regular fa-heart" onclick="goToFav()"></i>
+      <div class="profile">
+        <img src="images/Photo by Dani.png" alt="profile">
+      </div>
+    </div>
+  </div>
+
+
+  <!-- HEADER -->
+  <div class="help-header">
+    <h2>Need Help</h2>
+    <p>
+      We're here to help you with bookings, information, payments, or anything related to your
+      Table Reservation experience. Reach out to us via phone, email, or chat — our support
+      team is ready to assist you and make your food smooth and enjoyable.
+    </p>
+  </div>
+
+  <!-- IMAGE -->
+  <div class="help-image">
+    <img src="images/help.png" alt="Customer Support">
+  </div>
+
+  <!-- INFO -->
+  <div class="info-section">
+    <div class="info-grid">
+
+      <!-- BRAND -->
+      <div class="brand">
+        <h3>Bookmytable</h3>
+        <p>Never wait for your meal</p>
+
+        <div class="address">
+          <strong>Head Office</strong><br><br>
+          Bookmytable<br>
+          123 Green Wheels Avenue<br>
+          EcoCity, New Delhi – 110001,<br>
+          India
+        </div>
+      </div>
+
+      <!-- EMAIL -->
+      <div class="block">
+        <h4><i class="fa-regular fa-envelope"></i> Branch Email Id</h4>
+        <p>Email: support@bookmytable.com</p>
+        <p>Email: support@bookmytable.com</p>
+        <p>Email: support@bookmytable.com</p>
+
+        <h4 style="margin-top:30px;">Branch Manager</h4>
+        <div class="whatsapp">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>WhatsApp: +91 98765 43210</span>
+        </div>
+      </div>
+
+      <!-- CONTACT -->
+      <div class="block">
+        <h4><i class="fa-solid fa-phone"></i> Branch Supervisor</h4>
+        <p>ContactNumber</p>
+        <p>+919876543210</p>
+
+        <h4 style="margin-top:30px;"><i class="fa-solid fa-phone"></i> Branch Director</h4>
+        <p>ContactNumber</p>
+        <p>+918934374394</p>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="footer-col">
+        <h3>Company</h3>
+        <p>About Us</p>
+        <p>Contact Us</p>
+        <p>Customer Reviews</p>
+        <p>Add Your Restaurant</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Policy Info</h3>
+        <p>Terms & Conditions</p>
+        <p>Cookies Policy</p>
+        <p>Cancellation Policy</p>
+        <p>Privacy Policy</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Cities</h3>
+        <p>Chennai</p>
+        <p>Bangalore</p>
+        <p>Hyderabad</p>
+        <p>Mumbai</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Help</h3>
+        <p>Booking Status</p>
+        <p>Add Restaurant</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="footer-middle">
+      <p>Restaurant in Chennai</p>
+      <p>Restaurant in Bangalore</p>
+      <p>Restaurant in Hyderabad</p>
+      <p>Restaurant in Pune</p>
+      <p>Restaurant in Kolkata</p>
+      <p>Restaurant in Mumbai</p>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="copyright">
+        © 2025 Book My Table.Co.in. All rights reserved.
+      </div>
+
+      <div class="footer-contact">
+        <p><i class="fa-solid fa-phone"></i> (123) 8940-985498</p>
+        <p><i class="fa-solid fa-envelope"></i> info@bookmytable.com</p>
+        <p><i class="fa-solid fa-location-dot"></i> Chennai 54375387</p>
+      </div>
+    </div>
+
+    <div class="social-icons">
+      <i class="fa-brands fa-facebook-f"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-instagram"></i>
+    </div>
+
+  </footer>
+  <script>
+    function goHelp() {
+      window.location.href = "contact.html";
+    }
+    function goToFav() {
+      window.location.href = "whitelist.html";
+    }
+  </script>
+
+
+</body>
+
+</html>
